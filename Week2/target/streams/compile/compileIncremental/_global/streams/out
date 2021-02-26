@@ -1,0 +1,57 @@
+[debug] [zinc] IncrementalCompile -----------
+[debug] IncrementalCompile.incrementalCompile
+[debug] previous = Stamps for: 0 products, 0 sources, 0 libraries
+[debug] current source = Set(${BASE}/src/main/scala/Main.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/Main.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] Full compilation, no sources in previous analysis.
+[debug] all 1 sources are invalidated
+[debug] Initial set of included nodes: 
+[debug] Recompiling all sources: number of invalidated sources > 50.0% of all sources
+[debug] compilation cycle 1
+[info] compiling 1 Scala source to /Users/bsnbk/Documents/KBTU/BE/Week2/target/scala-2.13/classes ...
+[debug] Getting org.scala-sbt:compiler-bridge_2.13:1.4.4:compile for Scala 2.13.4
+[info] Non-compiled module 'compiler-bridge_2.13' for Scala 2.13.4. Compiling...
+[debug] Creating plain compiler interface for 2.13.4.
+[debug]   > Arguments: 
+[debug] 	-d
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_886c2554
+[debug] 	-nowarn
+[debug] 	-bootclasspath
+[debug] 	/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/classes:/Users/bsnbk/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4.jar
+[debug] 	-classpath
+[debug] 	/Users/bsnbk/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.4.4/compiler-interface-1.4.4.jar:/Users/bsnbk/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.4.0/util-interface-1.4.0.jar:/Users/bsnbk/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-bridge_2.13/1.4.4/compiler-bridge_2.13-1.4.4-sources.jar:/Users/bsnbk/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.4/scala-compiler-2.13.4.jar:/Users/bsnbk/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.4/scala-reflect-2.13.4.jar:/Users/bsnbk/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.16.0/jline-3.16.0.jar:/Users/bsnbk/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/scala/ZincCompat.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/API.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/AbstractZincFile.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/Analyzer.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/CallbackGlobal.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/ClassName.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/Compat.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/CompilerBridge.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/ConsoleBridge.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/DelegatingReporter.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/Dependency.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/ExtractAPI.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/ExtractUsedNames.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/GlobalHelpers.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/InteractiveConsoleBridge.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/InteractiveConsoleFactoryBridge.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/InteractiveConsoleHelper.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/InteractiveConsoleResponse.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/JarUtils.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/JavaUtils.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/LocalToNonLocalClass.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/LocateClassFile.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/Log.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/Message.scala
+[debug] 	/var/folders/k3/8n45nx0d3b14lg25j646jz7r0000gn/T/sbt_44a0b024/xsbt/ScaladocBridge.scala
+[debug]       
+[info]   Compilation completed in 8.341s.
+[debug] [zinc] Running cached compiler 66cca795 for Scala compiler version 2.13.4
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-bootclasspath
+[debug] 	/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/classes:/Users/bsnbk/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4.jar
+[debug] 	-classpath
+[debug] 	/Users/bsnbk/Documents/KBTU/BE/Week2/target/scala-2.13/classes
+[debug] Scala compilation took 10.607765238 s
+[info] done compiling

@@ -1,0 +1,5 @@
+[warn] /Users/bsnbk/Documents/KBTU/BE/Week5/src/main/scala/PingManager.scala:16:32: match may not be exhaustive.
+[warn] It would fail on the following input: ListingResponse(_)
+[warn]       Behaviors.receiveMessage {
+[warn]                                ^
+[warn] one warning found

@@ -1,0 +1,91 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.4.7 (Oracle Corporation Java 1.8.0_241)
+[debug]       Load.loadUnit: plugins took 100.080151ms
+[debug]       Load.loadUnit: defsScala took 0.442959ms
+[debug] [Loading] Scanning directory /Users/bsnbk/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/bsnbk/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 31.683065 ms
+[debug]           Load.resolveProject(global-plugins) took 57.584955ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /Users/bsnbk/.sbt/1.0/plugins, plugins: List(<none>))) took 236.467322ms
+[debug] [Loading] Done in /Users/bsnbk/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 261.632191ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.306619ms
+[debug]     Load.loadUnit(file:/Users/bsnbk/.sbt/1.0/plugins/, ...) took 371.176039ms
+[debug]   Load.apply: load took 6173.424365ms
+[debug]   Load.apply: resolveProjects took 6.737449ms
+[debug]   Load.apply: finalTransforms took 60.59838ms
+[debug]   Load.apply: config.delegates took 7.558533ms
+[debug]   Load.apply: Def.make(settings)... took 418.276951ms
+[debug]   Load.apply: structureIndex took 126.2401ms
+[debug]   Load.apply: mkStreams took 1.79151ms
+[info] loading global plugins from /Users/bsnbk/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 13239.239463ms
+[debug]           Load.loadUnit: plugins took 14.069187ms
+[debug]           Load.loadUnit: defsScala took 0.003658ms
+[debug] [Loading] Scanning directory /Users/bsnbk/Documents/KBTU/BE/Week6part2/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/bsnbk/Documents/KBTU/BE/Week6part2/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.09126 ms
+[debug]               Load.resolveProject(week6part2-build) took 1.307049ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id week6part2-build, base: /Users/bsnbk/Documents/KBTU/BE/Week6part2/project, plugins: List(<none>))) took 4.005542ms
+[debug] [Loading] Done in /Users/bsnbk/Documents/KBTU/BE/Week6part2/project, returning: (week6part2-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 5.768137ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.009958ms
+[debug]         Load.loadUnit(file:/Users/bsnbk/Documents/KBTU/BE/Week6part2/project/, ...) took 20.602127ms
+[debug]       Load.apply: load took 21.785151ms
+[debug]       Load.apply: resolveProjects took 0.115804ms
+[debug]       Load.apply: finalTransforms took 7.612617ms
+[debug]       Load.apply: config.delegates took 0.374429ms
+[debug]       Load.apply: Def.make(settings)... took 61.900345ms
+[debug]       Load.apply: structureIndex took 23.058473ms
+[debug]       Load.apply: mkStreams took 0.002568ms
+[info] loading project definition from /Users/bsnbk/Documents/KBTU/BE/Week6part2/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 242.455735ms
+[debug]     Load.loadUnit: defsScala took 0.003298ms
+[debug] [Loading] Scanning directory /Users/bsnbk/Documents/KBTU/BE/Week6part2
+[debug]       Load.loadUnit: mkEval took 8.033652ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /Users/bsnbk/Documents/KBTU/BE/Week6part2, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin))), Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.799994 ms
+[info] loading settings for project week6part2 from build.sbt ...
+[debug]         Load.resolveProject(week6part2) took 2.577457ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id week6part2, base: /Users/bsnbk/Documents/KBTU/BE/Week6part2, plugins: List(<none>))) took 4.857891ms
+[debug] [Loading] Done in /Users/bsnbk/Documents/KBTU/BE/Week6part2, returning: (week6part2)
+[debug]     Load.loadUnit: loadedProjectsRaw took 143.74874ms
+[debug]     Load.loadUnit: cleanEvalClasses took 5.093421ms
+[debug]   Load.loadUnit(file:/Users/bsnbk/Documents/KBTU/BE/Week6part2/, ...) took 392.012799ms
+[debug] Load.apply: load took 393.220254ms
+[debug] Load.apply: resolveProjects took 0.124932ms
+[debug] Load.apply: finalTransforms took 6.848258ms
+[debug] Load.apply: config.delegates took 0.362919ms
+[debug] Load.apply: Def.make(settings)... took 99.060232ms
+[debug] Load.apply: structureIndex took 21.708115ms
+[debug] Load.apply: mkStreams took 0.002023ms
+[info] set current project to Week6part2 (in build file:/Users/bsnbk/Documents/KBTU/BE/Week6part2/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 5 Scala sources to /Users/bsnbk/Documents/KBTU/BE/Week6part2/target/scala-2.13/classes ...
+[info] done compiling

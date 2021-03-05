@@ -1,0 +1,9 @@
+[debug] Packaging /Users/bsnbk/Documents/KBTU/BE/Week6/target/scala-2.13/week6_2.13-0.1.jar ...
+[debug] Input file mappings:
+[debug] 	HttpServerRoutingMinimal.class
+[debug] 	  /Users/bsnbk/Documents/KBTU/BE/Week6/target/scala-2.13/classes/HttpServerRoutingMinimal.class
+[debug] 	HttpServerRoutingMinimal$.class
+[debug] 	  /Users/bsnbk/Documents/KBTU/BE/Week6/target/scala-2.13/classes/HttpServerRoutingMinimal$.class
+[debug] 	application.conf
+[debug] 	  /Users/bsnbk/Documents/KBTU/BE/Week6/target/scala-2.13/classes/application.conf
+[debug] Done packaging.

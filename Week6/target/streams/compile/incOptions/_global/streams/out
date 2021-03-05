@@ -1,0 +1,11 @@
+[debug] Created transactional ClassFileManager with tempDir = /Users/bsnbk/Documents/KBTU/BE/Week6/target/scala-2.13/classes.bak
+[debug] About to delete class files:
+[debug] 	HttpServerRoutingMinimal.class
+[debug] 	HttpServerRoutingMinimal$.class
+[debug] We backup class files:
+[debug] 	HttpServerRoutingMinimal.class
+[debug] 	HttpServerRoutingMinimal$.class
+[debug] Registering generated classes:
+[debug] 	HttpServerRoutingMinimal.class
+[debug] 	HttpServerRoutingMinimal$.class
+[debug] Removing the temporary directory used for backing up class files: /Users/bsnbk/Documents/KBTU/BE/Week6/target/scala-2.13/classes.bak

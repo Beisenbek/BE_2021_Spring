@@ -4,13 +4,13 @@ enablePlugins(JavaAppPackaging, AshScriptPlugin)
 
 
 dockerBaseImage := "openjdk:8-jre-alpine"
-packageName in Docker := "week10"
+packageName in Docker := "week10x"
 
 
-name := "week10"
+name := "week10x"
 
 
-version := "0.2"
+version := "0.3"
 
 scalaVersion := "2.13.5"
 
@@ -41,7 +41,8 @@ libraryDependencies ++= Seq(
 
 dockerCommands := dockerCommands.value.map {
   case ExecCmd("CMD", _ @ _*) =>
-    ExecCmd("CMD", "/opt/docker/bin/week10")
+    ExecCmd("CMD", "/opt/docker/bin/week10x")
   case other =>
     other
 }
+//./deploy.sh week10x 236af64e9a62 f558a619-a226-46a2-aac4-390f102b2d36

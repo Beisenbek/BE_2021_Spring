@@ -1,22 +1,22 @@
-@REM week10 launcher script
+@REM week10x launcher script
 @REM
 @REM Environment:
 @REM JAVA_HOME - location of a JDK home dir (optional if java on path)
 @REM CFG_OPTS  - JVM options (optional)
 @REM Configuration:
-@REM WEEK10_config.txt found in the WEEK10_HOME.
+@REM WEEK10X_config.txt found in the WEEK10X_HOME.
 @setlocal enabledelayedexpansion
 
 @echo off
 
 
-if "%WEEK10_HOME%"=="" (
+if "%WEEK10X_HOME%"=="" (
   set "APP_HOME=%~dp0\\.."
 
   rem Also set the old env name for backwards compatibility
-  set "WEEK10_HOME=%~dp0\\.."
+  set "WEEK10X_HOME=%~dp0\\.."
 ) else (
-  set "APP_HOME=%WEEK10_HOME%"
+  set "APP_HOME=%WEEK10X_HOME%"
 )
 
 set "APP_LIB_DIR=%APP_HOME%\lib\"
@@ -26,7 +26,7 @@ rem manually run cmd /c
 for %%x in (!cmdcmdline!) do if %%~x==/c set DOUBLECLICKED=1
 
 rem FIRST we load the config file of extra options.
-set "CFG_FILE=%APP_HOME%\WEEK10_config.txt"
+set "CFG_FILE=%APP_HOME%\WEEK10X_config.txt"
 set CFG_OPTS=
 call :parse_config "%CFG_FILE%" CFG_OPTS
 
@@ -60,7 +60,7 @@ if "%JAVAOK%"=="false" (
   echo.
   echo Please go to
   echo   http://www.oracle.com/technetwork/java/javase/downloads/index.html
-  echo and download a valid Java JDK and install before running week10.
+  echo and download a valid Java JDK and install before running week10x.
   echo.
   echo If you think this message is in error, please check
   echo your environment variables to see if "java.exe" and "javac.exe" are
@@ -80,7 +80,7 @@ rem "-J" is stripped, "-D" is left as is, and everything is appended to JAVA_OPT
 set _JAVA_PARAMS=
 set _APP_ARGS=
 
-set "APP_CLASSPATH=%APP_LIB_DIR%\default.week10-0.2.jar;%APP_LIB_DIR%\org.scala-lang.scala-library-2.12.6.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-actor-typed_2.12-2.6.8.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-stream_2.12-2.6.8.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-http_2.12-10.2.4.jar;%APP_LIB_DIR%\io.circe.circe-core_2.12-0.9.3.jar;%APP_LIB_DIR%\io.circe.circe-generic_2.12-0.9.3.jar;%APP_LIB_DIR%\io.circe.circe-parser_2.12-0.9.3.jar;%APP_LIB_DIR%\de.heikoseeberger.akka-http-circe_2.12-1.21.0.jar;%APP_LIB_DIR%\ch.qos.logback.logback-classic-1.2.3.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-actor_2.12-2.6.8.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-slf4j_2.12-2.6.8.jar;%APP_LIB_DIR%\org.slf4j.slf4j-api-1.7.30.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-protobuf-v3_2.12-2.6.8.jar;%APP_LIB_DIR%\org.reactivestreams.reactive-streams-1.0.3.jar;%APP_LIB_DIR%\com.typesafe.ssl-config-core_2.12-0.4.1.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-http-core_2.12-10.2.4.jar;%APP_LIB_DIR%\io.circe.circe-numbers_2.12-0.9.3.jar;%APP_LIB_DIR%\org.typelevel.cats-core_2.12-1.0.1.jar;%APP_LIB_DIR%\org.typelevel.macro-compat_2.12-1.1.1.jar;%APP_LIB_DIR%\com.chuusai.shapeless_2.12-2.3.3.jar;%APP_LIB_DIR%\io.circe.circe-jawn_2.12-0.9.3.jar;%APP_LIB_DIR%\ch.qos.logback.logback-core-1.2.3.jar;%APP_LIB_DIR%\com.typesafe.config-1.4.0.jar;%APP_LIB_DIR%\org.scala-lang.modules.scala-java8-compat_2.12-0.8.0.jar;%APP_LIB_DIR%\org.scala-lang.modules.scala-parser-combinators_2.12-1.1.2.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-parsing_2.12-10.2.4.jar;%APP_LIB_DIR%\com.twitter.hpack-1.0.2.jar;%APP_LIB_DIR%\org.typelevel.cats-macros_2.12-1.0.1.jar;%APP_LIB_DIR%\org.typelevel.cats-kernel_2.12-1.0.1.jar;%APP_LIB_DIR%\org.typelevel.machinist_2.12-0.6.2.jar;%APP_LIB_DIR%\org.spire-math.jawn-parser_2.12-0.11.1.jar;%APP_LIB_DIR%\org.scala-lang.scala-reflect-2.12.6.jar"
+set "APP_CLASSPATH=%APP_LIB_DIR%\week10x.week10x-0.2.jar;%APP_LIB_DIR%\org.scala-lang.scala-library-2.12.6.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-actor-typed_2.12-2.6.8.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-stream_2.12-2.6.8.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-http_2.12-10.2.4.jar;%APP_LIB_DIR%\io.circe.circe-core_2.12-0.9.3.jar;%APP_LIB_DIR%\io.circe.circe-generic_2.12-0.9.3.jar;%APP_LIB_DIR%\io.circe.circe-parser_2.12-0.9.3.jar;%APP_LIB_DIR%\de.heikoseeberger.akka-http-circe_2.12-1.21.0.jar;%APP_LIB_DIR%\ch.qos.logback.logback-classic-1.2.3.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-actor_2.12-2.6.8.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-slf4j_2.12-2.6.8.jar;%APP_LIB_DIR%\org.slf4j.slf4j-api-1.7.30.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-protobuf-v3_2.12-2.6.8.jar;%APP_LIB_DIR%\org.reactivestreams.reactive-streams-1.0.3.jar;%APP_LIB_DIR%\com.typesafe.ssl-config-core_2.12-0.4.1.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-http-core_2.12-10.2.4.jar;%APP_LIB_DIR%\io.circe.circe-numbers_2.12-0.9.3.jar;%APP_LIB_DIR%\org.typelevel.cats-core_2.12-1.0.1.jar;%APP_LIB_DIR%\org.typelevel.macro-compat_2.12-1.1.1.jar;%APP_LIB_DIR%\com.chuusai.shapeless_2.12-2.3.3.jar;%APP_LIB_DIR%\io.circe.circe-jawn_2.12-0.9.3.jar;%APP_LIB_DIR%\ch.qos.logback.logback-core-1.2.3.jar;%APP_LIB_DIR%\com.typesafe.config-1.4.0.jar;%APP_LIB_DIR%\org.scala-lang.modules.scala-java8-compat_2.12-0.8.0.jar;%APP_LIB_DIR%\org.scala-lang.modules.scala-parser-combinators_2.12-1.1.2.jar;%APP_LIB_DIR%\com.typesafe.akka.akka-parsing_2.12-10.2.4.jar;%APP_LIB_DIR%\com.twitter.hpack-1.0.2.jar;%APP_LIB_DIR%\org.typelevel.cats-macros_2.12-1.0.1.jar;%APP_LIB_DIR%\org.typelevel.cats-kernel_2.12-1.0.1.jar;%APP_LIB_DIR%\org.typelevel.machinist_2.12-0.6.2.jar;%APP_LIB_DIR%\org.spire-math.jawn-parser_2.12-0.11.1.jar;%APP_LIB_DIR%\org.scala-lang.scala-reflect-2.12.6.jar"
 set "APP_MAIN_CLASS=Boot"
 set "SCRIPT_CONF_FILE=%APP_HOME%\conf\application.ini"
 
@@ -98,7 +98,7 @@ if defined CUSTOM_MAIN_CLASS (
 )
 
 rem Call the application and pass all arguments unchanged.
-"%_JAVACMD%" !_JAVA_OPTS! !WEEK10_OPTS! -cp "%APP_CLASSPATH%" %MAIN_CLASS% !_APP_ARGS!
+"%_JAVACMD%" !_JAVA_OPTS! !WEEK10X_OPTS! -cp "%APP_CLASSPATH%" %MAIN_CLASS% !_APP_ARGS!
 
 @endlocal
 
